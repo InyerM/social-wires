@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "3afb77e6-d0d2-4eb2-9804-8ab35b862225",
+		"name": "SocialWires",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20434448"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"usertest\", \r\n    \"password\": \"123456\", \r\n    \"email\": \"usertest@gmail.com\", \r\n    \"fullName\": \"Usertest\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/auth/register",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"usertest\", \r\n    \"password\": \"123456\", \r\n    \"email\": \"usertest@gmail.com\", \r\n    \"fullName\": \"Usertest\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/auth/register",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "593"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"251-DBkrNrhmz7a4wSG4zKk3iksTOug\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Dec 2022 20:44:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"id\": \"2cf6df3b-e8b6-477c-95a4-1a1ccccfb289\",\n        \"username\": \"usertest\",\n        \"email\": \"usertest@gmail.com\",\n        \"fullName\": \"Usertest\",\n        \"password\": \"$2b$12$Pyv95.aJC2rJHISwXwcdjewG5eWiWW5MjP3/y2qmguMcw9.WrqmjW\",\n        \"createdAt\": \"2022-12-20T20:44:36.178Z\",\n        \"updatedAt\": \"2022-12-20T20:44:36.178Z\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJ0ZXN0QGdtYWlsLmNvbSIsImlkIjoiMmNmNmRmM2ItZThiNi00NzdjLTk1YTQtMWExY2NjY2ZiMjg5IiwidXNlcm5hbWUiOiJ1c2VydGVzdCIsImlhdCI6MTY3MTU2OTA3NiwiZXhwIjoxNjc0MTYxMDc2fQ.OrZrrGamdNtG2jAtvqRJgOuDcMQ7c4k1Hjoh_IlN3LU\",\n    \"ok\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"usertest@gmail.com\", \r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/auth/login",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"usertest@gmail.com\", \r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/auth/login",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "321"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"141-rE3H8v3RT1Cav31ZcZ31uvB0G2k\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Dec 2022 20:45:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User authenticated successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJ0ZXN0QGdtYWlsLmNvbSIsImlkIjoiMmNmNmRmM2ItZThiNi00NzdjLTk1YTQtMWExY2NjY2ZiMjg5IiwidXNlcm5hbWUiOiJ1c2VydGVzdCIsImlhdCI6MTY3MTU2OTEwOCwiZXhwIjoxNjc0MTYxMTA4fQ.SqNA_SjXSeH6vLAPhTvR_Ua07Ekxczpit0e7jJ1ynvo\",\n    \"ok\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Post Message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"AAAAA\",\r\n    \"text\": \"Mi mensajeeeee\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/messages",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post Message",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"AAAAA\",\r\n    \"text\": \"Mi mensajeeeee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/messages",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"messages"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "235"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"eb-AFO03fHb3ElmyV8JZ0eAEXt/AVk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Dec 2022 20:45:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Message created successfully\",\n    \"data\": [\n        {\n            \"title\": \"AAAAA\",\n            \"text\": \"Mi mensajeeeee\",\n            \"user\": \"2cf6df3b-e8b6-477c-95a4-1a1ccccfb289\",\n            \"id\": 21,\n            \"createdAt\": \"2022-12-20T20:45:46.084Z\",\n            \"updatedAt\": \"2022-12-20T20:45:46.084Z\"\n        }\n    ],\n    \"ok\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mi nuevo mensaje\",\r\n    \"text\": \"Editado desde postmann\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/messages/21",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"messages",
+						"21"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Message",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mi nuevo mensaje\",\r\n    \"text\": \"Editado desde postmann\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/messages/21",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"messages",
+								"21"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "484"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e4-RZI2mh5fWA76S+UF8IDKmp1hKfo\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Dec 2022 20:46:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Message updated successfully\",\n    \"data\": {\n        \"id\": 21,\n        \"title\": \"Mi nuevo mensaje\",\n        \"text\": \"Editado desde postmann\",\n        \"createdAt\": \"2022-12-20T20:45:46.084Z\",\n        \"updatedAt\": \"2022-12-20T20:46:21.269Z\",\n        \"user\": {\n            \"id\": \"2cf6df3b-e8b6-477c-95a4-1a1ccccfb289\",\n            \"username\": \"usertest\",\n            \"email\": \"usertest@gmail.com\",\n            \"fullName\": \"Usertest\",\n            \"password\": \"$2b$12$Pyv95.aJC2rJHISwXwcdjewG5eWiWW5MjP3/y2qmguMcw9.WrqmjW\",\n            \"createdAt\": \"2022-12-20T20:44:36.178Z\",\n            \"updatedAt\": \"2022-12-20T20:44:36.178Z\"\n        }\n    },\n    \"ok\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/messages/21",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"messages",
+						"21"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Message",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/messages/21",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"messages",
+								"21"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-x1Wpu+PuEvJcA9kc6j0jVLWr9Ts\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Dec 2022 20:46:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Message deleted successfully\",\n    \"ok\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Messages",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/messages?dateFilter=2022-12-20&search=in",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"messages"
+					],
+					"query": [
+						{
+							"key": "dateFilter",
+							"value": "2022-12-20"
+						},
+						{
+							"key": "search",
+							"value": "in"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Messages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/messages?dateFilter=2022-12-20&search=in",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"messages"
+							],
+							"query": [
+								{
+									"key": "dateFilter",
+									"value": "2022-12-20"
+								},
+								{
+									"key": "search",
+									"value": "in"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1314"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"522-ZYxeMqlm/Uy7A5+A1HsMy3wywFo\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Dec 2022 20:46:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Messages found\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"Mi nuevo mensaje\",\n            \"text\": \"Este es mi nuevo mensaje lorem ipsum\",\n            \"createdAt\": \"2022-12-19T21:39:05.730Z\",\n            \"updatedAt\": \"2022-12-19T21:39:05.730Z\",\n            \"user\": {\n                \"username\": \"InyerM\",\n                \"fullName\": \"Inyer Marín Medina\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Mi nuevo mensaje\",\n            \"text\": \"Este es mi nuevo mensaje lorem ipsum\",\n            \"createdAt\": \"2022-12-19T21:39:06.753Z\",\n            \"updatedAt\": \"2022-12-19T21:39:06.753Z\",\n            \"user\": {\n                \"username\": \"InyerM\",\n                \"fullName\": \"Inyer Marín Medina\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Mi nuevo mensaje\",\n            \"text\": \"Este es mi nuevo mensaje lorem ipsum\",\n            \"createdAt\": \"2022-12-19T21:39:36.905Z\",\n            \"updatedAt\": \"2022-12-19T21:39:36.905Z\",\n            \"user\": {\n                \"username\": \"InyerM\",\n                \"fullName\": \"Inyer Marín Medina\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"title\": \"AAAAA\",\n            \"text\": \"XD\",\n            \"createdAt\": \"2022-12-19T22:27:27.032Z\",\n            \"updatedAt\": \"2022-12-19T22:27:27.032Z\",\n            \"user\": {\n                \"username\": \"InyerM\",\n                \"fullName\": \"Inyer Marín Medina\"\n            }\n        },\n        {\n            \"id\": 16,\n            \"title\": \"Lorem\",\n            \"text\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.\",\n            \"createdAt\": \"2022-12-19T23:30:26.310Z\",\n            \"updatedAt\": \"2022-12-19T23:30:26.310Z\",\n            \"user\": {\n                \"username\": \"admin\",\n                \"fullName\": \"Admin\"\n            }\n        },\n        {\n            \"id\": 17,\n            \"title\": \"Libero\",\n            \"text\": \"Libero, quia. Quisquam, quod.\",\n            \"createdAt\": \"2022-12-19T23:30:26.321Z\",\n            \"updatedAt\": \"2022-12-19T23:30:26.321Z\",\n            \"user\": {\n                \"username\": \"admin\",\n                \"fullName\": \"Admin\"\n            }\n        }\n    ],\n    \"ok\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Seed",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/seed",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"seed"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "http://localhost:4000/api",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJ0ZXN0QGdtYWlsLmNvbSIsImlkIjoiMmNmNmRmM2ItZThiNi00NzdjLTk1YTQtMWExY2NjY2ZiMjg5IiwidXNlcm5hbWUiOiJ1c2VydGVzdCIsImlhdCI6MTY3MTU2OTEwOCwiZXhwIjoxNjc0MTYxMTA4fQ.SqNA_SjXSeH6vLAPhTvR_Ua07Ekxczpit0e7jJ1ynvo",
+			"type": "string"
+		}
+	]
+}
