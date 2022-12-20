@@ -1,0 +1,7 @@
+export { default as chatbox } from './chatbox-ellipses.svg'
+export { default as chatBubbles } from './chatbubbles-sharp.svg'
+export { default as create } from './create.svg'
+export { default as eye } from './eye.svg'
+export { default as logInSharp } from './log-in-sharp.svg'
+export { default as menu } from './menu.svg'
+export { default as send } from './send.svg'
